@@ -3,10 +3,16 @@
 
 Console.WriteLine("Программа для определения координатной четверти.");
 
-Console.Write("Введите первую координату отличную от 0: ");
-int x = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите вторую координату отличную от 0: ");
-int y = Convert.ToInt32(Console.ReadLine());
+//проверка на 0
+int x = 0;
+int y = 0;
+while (x*y == 0)
+{
+Console.Write("Введите ПЕРВУЮ координату отличную от 0 (X): ");
+x = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите ВТОРУЮ координату отличную от 0 (Y): ");
+y = Convert.ToInt32(Console.ReadLine());
+}
 
 switch ((x,y))
 {
