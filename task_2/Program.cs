@@ -10,17 +10,19 @@ int y = Convert.ToInt32(Console.ReadLine());
 
 switch ((x,y))
 {
-    case (< 0, > 0):
+    case (> 0, > 0):
         Console.WriteLine("Введенные координаты указываю на ПЕРВУЮ четверть.");
         break;
     
-    case ():
+    case (< 0, > 0):
+        Console.WriteLine("Введенные координаты указываю на ВТОРУЮ четверть.");
+        break;
 
-
-    case ():
-
+    case (< 0, < 0):
+        Console.WriteLine("Введенные координаты указываю на ТРЕТЬЮ четверть.");
+        break;
 
     default:
-        Console.WriteLine();
+        Console.WriteLine("Введенные координаты указываю на ЧЕТВЕРТУЮ четверть.");
         break;
 }
